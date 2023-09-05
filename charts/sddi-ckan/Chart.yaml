@@ -29,6 +29,7 @@ dependencies:
   - name: redis
     version: "*"
     condition: redis.enabled
+    repository: "file://charts/redis"
   - name: ckan
     version: "*"
     condition: ckan.enabled

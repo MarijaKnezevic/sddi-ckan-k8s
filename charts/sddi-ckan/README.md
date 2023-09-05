@@ -28,8 +28,8 @@ Kubernetes: `>= 1.23.0-0`
 |  | ckan | * |
 |  | datapusher | * |
 |  | postgis | * |
-|  | redis | * |
 |  | solr | * |
+| file://charts/redis | redis | * |
 | https://charts.bitnami.com/bitnami | myredis(redis) | ~18.0.0 |
 | https://charts.jetstack.io | cert-manager(cert-manager) | ~1.11.0 |
 | https://kubernetes.github.io/ingress-nginx | ingress-nginx(ingress-nginx) | ~4.4.0 |
