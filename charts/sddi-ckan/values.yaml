@@ -163,6 +163,9 @@ clamav:
       # -- [k8s: Resource management](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
       memory: 2Gi
 
+
+  # https://docs.clamav.net/manual/Usage/Configuration.html
+  # https://linux.die.net/man/5/clamd.conf
   clamdConfig: |
     ###############
     # General
@@ -180,7 +183,6 @@ clamav:
     Foreground yes
     StreamMaxLength 4000M
     LogVerbose yes
-    BytecodeTimeout 1000
 
     ###############
     # Results
@@ -226,6 +228,14 @@ clamav:
     MaxIconsPE 200
     PCREMatchLimit 10000
     PCRERecMatchLimit 10000
+
+    # Custom settings
+
+    # ReadTimeout
+    # CommandReadTimeout
+    # SendBufTimeout
+    # BytecodeTimeout 1000
+    # StreamMaxLength 250M
 
   ## Ref: https://linux.die.net/man/5/freshclam.conf
   ## Note: will completely override default clamd.conf file at https://github.com/Mailu/Mailu/tree/master/optional/clamav/conf
