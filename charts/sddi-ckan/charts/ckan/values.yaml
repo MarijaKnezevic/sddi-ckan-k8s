@@ -97,7 +97,7 @@ ingress:
     issuerName: letsencrypt-staging
   stickySessions:
     # -- Enable/disable sticks sessions, see
-    # [Nginx Ingress Controller Sticky sessions](https://kubernetes.github.io/ingress-nginx/examples/affinity/cookie/).
+    # [Nginx Ingress Controller Sticky sessions](https://kubernetes.github.io/ingress-nginx/examples/affinity/cookie/)
     enabled: false
     sessionCookie:
       # -- [Nginx Ingress Controller Sticky sessions](https://kubernetes.github.io/ingress-nginx/examples/affinity/cookie/)
